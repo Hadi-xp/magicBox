@@ -1,0 +1,8 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    margin: 15% auto;
+    border-radius: 15px;
+    position: relative;
+}
