@@ -1,10 +1,11 @@
 const box = document.querySelector(".box");
-const myMusic = document.querySelector(".music audio");
+const myMusic = new Audio('./Travis Scott - FE!N.mp3');
 let currentColor = box.style.background;
 document.addEventListener("keydown",press);
 box.addEventListener("mouseover",hover);
 box.addEventListener("mouseleave",out);
 document.addEventListener("keydown",play);
+document.addEventListener('keydown',stop);
 document.addEventListener('keydown',move);
 const moveAmount = 100;
 let x = 0;
@@ -40,11 +41,6 @@ function play(event){
 function stop(event){
     if(event.keyCode == 32){
         myMusic.pause();
-    }
-}
-function moveRight(event){
-    if(event.keyCode == 39){
-        box.style
     }
 }
 
